@@ -5,14 +5,10 @@ import heroImage from "@/assets/cleanbot-hero.jpg";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      {/* Background Image */}
+      {/* Enhanced background gradient - no image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="CleanBot in action" 
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-accent/20 to-secondary/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/30 to-secondary/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary-glow/20 to-transparent"></div>
       </div>
       
       {/* Content */}
@@ -33,19 +29,25 @@ export const Hero = () => {
             The revolutionary AI-powered robot that autonomously detects, collects, and disposes of litter to keep our world clean
           </p>
           
-          {/* Feature Icons */}
-          <div className="flex justify-center items-center gap-8 mb-10 animate-slide-up">
-            <div className="flex items-center gap-2 text-accent">
-              <Camera className="w-6 h-6" />
-              <span className="hidden sm:inline text-sm font-medium">AI Vision</span>
+          {/* Enhanced Feature Icons */}
+          <div className="flex justify-center items-center gap-4 md:gap-8 mb-10 animate-slide-up">
+            <div className="flex flex-col items-center gap-3 p-4 bg-card/70 backdrop-blur-sm rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-tech rounded-xl flex items-center justify-center shadow-glow">
+                <Camera className="w-6 h-6 text-white" />
+              </div>
+              <span className="text-sm font-semibold text-foreground">AI Vision</span>
             </div>
-            <div className="flex items-center gap-2 text-secondary">
-              <Zap className="w-6 h-6" />
-              <span className="hidden sm:inline text-sm font-medium">Solar Powered</span>
+            <div className="flex flex-col items-center gap-3 p-4 bg-card/70 backdrop-blur-sm rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-eco rounded-xl flex items-center justify-center shadow-glow">
+                <Zap className="w-6 h-6 text-white" />
+              </div>
+              <span className="text-sm font-semibold text-foreground">Solar Powered</span>
             </div>
-            <div className="flex items-center gap-2 text-accent">
-              <TreePine className="w-6 h-6" />
-              <span className="hidden sm:inline text-sm font-medium">Eco-Friendly</span>
+            <div className="flex flex-col items-center gap-3 p-4 bg-card/70 backdrop-blur-sm rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-eco rounded-xl flex items-center justify-center shadow-glow">
+                <TreePine className="w-6 h-6 text-white" />
+              </div>
+              <span className="text-sm font-semibold text-foreground">Eco-Friendly</span>
             </div>
           </div>
           

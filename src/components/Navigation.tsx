@@ -1,15 +1,17 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Bot, Menu, X } from "lucide-react";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
-    { label: "Features", href: "#features" },
-    { label: "Technology", href: "#technology" },
-    { label: "Impact", href: "#impact" },
-    { label: "Contact", href: "#contact" }
+    { label: "Features", href: "/features" },
+    { label: "Technology", href: "/technology" },
+    { label: "Impact", href: "/impact" },
+    { label: "Contact", href: "/contact" }
   ];
 
   return (
@@ -17,29 +19,35 @@ export const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gradient-tech rounded-xl flex items-center justify-center shadow-glow">
               <Bot className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-tech bg-clip-text text-transparent">
               CleanBot
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium"
+                to={item.href}
+                className={`transition-colors duration-300 font-medium ${
+                  location.pathname === item.href 
+                    ? "text-primary font-semibold" 
+                    : "text-muted-foreground hover:text-primary"
+                }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
-            <Button variant="hero" className="ml-4">
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button variant="hero" className="ml-4">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,18 +68,24 @@ export const Navigation = () => {
           <div className="md:hidden py-4 border-t border-border/50">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                  to={item.href}
+                  className={`transition-colors duration-300 font-medium py-2 ${
+                    location.pathname === item.href 
+                      ? "text-primary font-semibold" 
+                      : "text-muted-foreground hover:text-primary"
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
-              <Button variant="hero" className="mt-4 w-full">
-                Get Started
-              </Button>
+              <Link to="/contact" className="mt-4">
+                <Button variant="hero" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         )}

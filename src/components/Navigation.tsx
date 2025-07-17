@@ -10,7 +10,7 @@ export const Navigation = () => {
   const navItems = [
     { label: "Features", href: "/features" },
     { label: "Technology", href: "/technology" },
-    { label: "Impact", href: "/impact" },
+    { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" }
   ];
 
@@ -43,9 +43,9 @@ export const Navigation = () => {
                 {item.label}
               </Link>
             ))}
-            <Link to="/contact">
+            <Link to="/about">
               <Button variant="hero" className="ml-4">
-                Get Started
+                About Us
               </Button>
             </Link>
           </div>
@@ -81,9 +81,9 @@ export const Navigation = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link to="/contact" className="mt-4">
+              <Link to="/about" className="mt-4">
                 <Button variant="hero" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                  Get Started
+                  About Us
                 </Button>
               </Link>
             </div>

@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Camera, Zap, TreePine, Bot } from "lucide-react";
-import heroImage from "@/assets/cleanbot-hero.jpg";
 
 export const Hero = () => {
   return (

@@ -49,17 +49,15 @@ const AboutPage = () => {
                     <Users className="w-12 h-12 text-white" />
                   </div>
                   <CardTitle className="text-2xl">Shrivats Pandey</CardTitle>
-                  <p className="text-muted-foreground">Co-Founder & CEO</p>
+                  <p className="text-muted-foreground">Co-Founder</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-muted-foreground leading-relaxed">
-                    Visionary leader with expertise in AI and robotics. Passionate about leveraging 
-                    technology to solve environmental challenges and create sustainable solutions 
-                    for future generations.
+                    Shrivats Pandey is a high school innovator and robotics engineer passionate about solving real-world problems with AI and sustainable technology. He leads projects like CleanBot, mentors international students in robotics, and actively contributes to advanced competitions like MIT Zero Robotics and Science Olympiad. With experience in programming, hardware design, and community outreach, Shrivats aims to create smarter, greener solutions for the future.
                   </p>
                   <div className="flex justify-center items-center gap-2 mt-4 text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4" />
-                    <span>San Francisco, CA</span>
+                    <span>Cumberland, RI</span>
                   </div>
                 </CardContent>
               </Card>
@@ -71,7 +69,7 @@ const AboutPage = () => {
                     <Users className="w-12 h-12 text-white" />
                   </div>
                   <CardTitle className="text-2xl">Rishabh Mathukia</CardTitle>
-                  <p className="text-muted-foreground">Co-Founder & CTO</p>
+                  <p className="text-muted-foreground">Co-Founder & CEO</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-muted-foreground leading-relaxed">
@@ -81,7 +79,7 @@ const AboutPage = () => {
                   </p>
                   <div className="flex justify-center items-center gap-2 mt-4 text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4" />
-                    <span>San Francisco, CA</span>
+                    <span>Franklin, MA</span>
                   </div>
                 </CardContent>
               </Card>

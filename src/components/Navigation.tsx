@@ -43,9 +43,9 @@ export const Navigation = () => {
                 {item.label}
               </Link>
             ))}
-            <Link to="/about">
+            <Link to="/support">
               <Button variant="hero" className="ml-4">
-                About Us
+                Support Us
               </Button>
             </Link>
           </div>
@@ -81,9 +81,9 @@ export const Navigation = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link to="/about" className="mt-4">
+              <Link to="/support" className="mt-4">
                 <Button variant="hero" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                  About Us
+                  Support Us
                 </Button>
               </Link>
             </div>

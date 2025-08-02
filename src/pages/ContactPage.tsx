@@ -16,15 +16,9 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    content: "+1 (555) 123-CLEAN",
-    subContent: "Mon-Fri, 9AM-6PM EST"
+    content: "+1 (401)-359-6209 | +1 (508)-440-6948",
+    subContent: "Mon-Fri, 9AM-8PM EST"
   },
-  {
-    icon: MapPin,
-    title: "Visit Us",
-    content: "Innovation District, Tech City",
-    subContent: "Schedule an appointment"
-  }
 ];
 
 const ContactPage = () => {
@@ -59,7 +53,7 @@ const ContactPage = () => {
                 Whether you're a city planner, park manager, or environmental advocate, we'd love to discuss how CleanBot can help create cleaner, more sustainable communities.
               </p>
               
-              <div className="space-y-8">
+              <div className="space-y-8 mt-16">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-tech rounded-xl flex items-center justify-center shadow-glow flex-shrink-0">
@@ -82,25 +76,7 @@ const ContactPage = () => {
 
               {/* Additional Info Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
-                <Card className="p-6 bg-gradient-card shadow-card border-0">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Clock className="w-6 h-6 text-primary" />
-                    <h4 className="font-semibold text-foreground">Demo Available</h4>
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    Schedule a live demonstration of CleanBot in action
-                  </p>
-                </Card>
                 
-                <Card className="p-6 bg-gradient-card shadow-card border-0">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Users className="w-6 h-6 text-secondary" />
-                    <h4 className="font-semibold text-foreground">Pilot Programs</h4>
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    Join our pilot program for early access and special pricing
-                  </p>
-                </Card>
               </div>
             </div>
 
@@ -111,19 +87,19 @@ const ContactPage = () => {
                 <h3 className="text-2xl font-bold text-foreground">Send us a Message</h3>
               </div>
               
-              <form className="space-y-6">
+              <form className="space-y-6" action="https://formspree.io/f/mgvyrnyq" method="POST">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       First Name
                     </label>
-                    <Input placeholder="John" className="bg-background/50" />
+                    <Input name="firstName" placeholder="John" className="bg-background/50" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       Last Name
                     </label>
-                    <Input placeholder="Doe" className="bg-background/50" />
+                    <Input name="lastName" placeholder="Doe" className="bg-background/50" />
                   </div>
                 </div>
                 
@@ -131,14 +107,14 @@ const ContactPage = () => {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Email Address
                   </label>
-                  <Input type="email" placeholder="john.doe@example.com" className="bg-background/50" />
+                  <Input name="email" type="email" placeholder="john.doe@example.com" className="bg-background/50" />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Organization
                   </label>
-                  <Input placeholder="City Parks Department" className="bg-background/50" />
+                  <Input name="organization" placeholder="CleanBot" className="bg-background/50" />
                 </div>
                 
                 <div>
@@ -146,6 +122,7 @@ const ContactPage = () => {
                     Message
                   </label>
                   <Textarea 
+                    name="message"
                     placeholder="Tell us about your environmental cleanup needs and how CleanBot can help..."
                     rows={5}
                     className="bg-background/50"

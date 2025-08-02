@@ -53,7 +53,8 @@ const AboutPage = () => {
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-muted-foreground leading-relaxed">
-                    Shrivats Pandey is a high school innovator and robotics engineer passionate about solving real-world problems with AI and sustainable technology. He leads projects like CleanBot, mentors international students in robotics, and actively contributes to advanced competitions like MIT Zero Robotics and Science Olympiad. With experience in programming, hardware design, and community outreach, Shrivats aims to create smarter, greener solutions for the future.
+                    
+Shrivats Pandey is a high school innovator and the lead engineer behind CleanBot, an AI-powered autonomous robot built to tackle environmental waste through sustainable and intelligent design. Passionate about real-world problem-solving, Shrivats combines robotics, machine learning, and hardware systems to engineer impactful solutions. He is currently interning in AI and ML, applying advanced algorithms to projects like CleanBot to enhance autonomy and performance. 
                   </p>
                   <div className="flex justify-center items-center gap-2 mt-4 text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4" />

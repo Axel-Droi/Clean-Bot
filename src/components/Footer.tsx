@@ -25,11 +25,11 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-CLEAN</span>
+                <span>+1 (401)359-6209 </span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>Innovation District, Tech City</span>
+                <span>Cumberland RI | Franklin</span>
               </div>
             </div>
           </div>
@@ -70,3 +70,4 @@ export const Footer = () => {
   </footer>
   );
 };
+

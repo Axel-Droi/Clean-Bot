@@ -81,8 +81,8 @@ export const Impact = () => {
             <Button variant="secondary" size="lg" className="text-lg px-8 py-4">
               Get Started Today
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white hover:text-primary">
-              Schedule Demo
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white hover:text-primary">
+              <a href="/about">About Us</a>
             </Button>
           </div>
         </div>

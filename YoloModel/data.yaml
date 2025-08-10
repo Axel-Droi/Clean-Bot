@@ -1,0 +1,5 @@
+train: C:/Users/epics/OneDrive/Documents/CleanBot/Clean-Bot-1/YoloModel/images/train
+val: C:/Users/epics/OneDrive/Documents/CleanBot/Clean-Bot-1/YoloModel/images/val
+
+nc: 1
+names: ['trash']

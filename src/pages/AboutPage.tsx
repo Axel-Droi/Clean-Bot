@@ -49,11 +49,12 @@ const AboutPage = () => {
                     <Users className="w-12 h-12 text-white" />
                   </div>
                   <CardTitle className="text-2xl">Shrivats Pandey</CardTitle>
-                  <p className="text-muted-foreground">Co-Founder</p>
+                  <p className="text-muted-foreground">COO</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-muted-foreground leading-relaxed">
-                    Shrivats Pandey is a high school innovator and robotics engineer passionate about solving real-world problems with AI and sustainable technology. He leads projects like CleanBot, mentors international students in robotics, and actively contributes to advanced competitions like MIT Zero Robotics and Science Olympiad. With experience in programming, hardware design, and community outreach, Shrivats aims to create smarter, greener solutions for the future.
+                    
+Shrivats Pandey is a high school innovator and the lead engineer behind CleanBot, an AI-powered autonomous robot built to tackle environmental waste through sustainable and intelligent design. Passionate about real-world problem-solving, Shrivats combines robotics, machine learning, and hardware systems to engineer impactful solutions. He is currently interning in AI and ML, applying advanced algorithms to projects like CleanBot to enhance autonomy and performance. 
                   </p>
                   <div className="flex justify-center items-center gap-2 mt-4 text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4" />
@@ -69,13 +70,11 @@ const AboutPage = () => {
                     <Users className="w-12 h-12 text-white" />
                   </div>
                   <CardTitle className="text-2xl">Rishabh Mathukia</CardTitle>
-                  <p className="text-muted-foreground">Co-Founder & CEO</p>
+                  <p className="text-muted-foreground">CEO</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-muted-foreground leading-relaxed">
-                    Technical innovator specializing in machine learning and autonomous systems. 
-                    Dedicated to developing intelligent robots that can make a meaningful impact 
-                    on environmental conservation.
+                    Rishabh Mathukiya is a high school innovator and lead engineer at CleanBot, an AI-powered robot designed to combat environmental waste through smart, sustainable technology. With a strong foundation in programming, CAD design, robotics, and environmental engineering, Rishabh brings both technical skill and creative problem-solving to the table. As captain of multiple robotics teams and lead on multiple research projects, he combines hands-on leadership with a passion for building real-world solutions, from autonomous systems to green tech. Beyond engineering, Rishabh is committed to using technology for social good, mentoring younger students and giving back through community outreach. He's driven by a vision of a future where innovation and ethics go hand in hand to make a lasting impact.  
                   </p>
                   <div className="flex justify-center items-center gap-2 mt-4 text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4" />

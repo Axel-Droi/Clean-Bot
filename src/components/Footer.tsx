@@ -1,4 +1,5 @@
 import { Bot, Mail, MapPin, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -13,8 +14,8 @@ export const Footer = () => {
               </div>
               <span className="text-2xl font-bold">CleanBot</span>
             </div>
-            <p className="text-primary-foreground/80 mb-6 max-w-md">
-             AI-powered robot designed to autonomously detect, collect, and dispose of litter, creating cleaner and more sustainable communities worldwide.
+            <p className="text-white mb-6 max-w-md">
+              The revolutionary AI-powered robot that autonomously detects, collects, and disposes of litter to keep our world clean
             </p>
             <div className="space-y-2 text-sm text-primary-foreground/70">
               <div className="flex items-center gap-2">
@@ -25,11 +26,11 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+1 (401)359-6209 </span>
+                <span>+1 (401)-359-6209</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>Cumberland RI | Franklin</span>
+                <span>Cumberland, RI | Franklin, MA</span>
               </div>
             </div>
           </div>
@@ -38,10 +39,9 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Product</h3>
             <ul className="space-y-3 text-primary-foreground/80">
-              <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-              <li><a href="#technology" className="hover:text-white transition-colors">Technology</a></li>
-              <li><a href="#specifications" className="hover:text-white transition-colors">Specifications</a></li>
-              <li><a href="#demo" className="hover:text-white transition-colors">Live Demo</a></li>
+              <li><Link to="/features" className="hover:text-white transition-colors">Features</Link></li>
+              <li><Link to="/technology" className="hover:text-white transition-colors">Technology</Link></li>
+              <li><Link to="/specifications" className="hover:text-white transition-colors">Specifications</Link></li>
             </ul>
           </div>
 
@@ -49,9 +49,9 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-3 text-primary-foreground/80">
-              <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#news" className="hover:text-white transition-colors">News</a></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/news" className="hover:text-white transition-colors">News</Link></li>
             </ul>
           </div>
         </div>
@@ -62,12 +62,11 @@ export const Footer = () => {
             © 2025 CleanBot. All rights reserved. Revolutionizing environmental cleanup with AI.
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/60">
-            <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
+            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
   );
 };
-

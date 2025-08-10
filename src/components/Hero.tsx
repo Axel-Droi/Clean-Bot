@@ -24,7 +24,7 @@ export const Hero = () => {
             Meet <span className="bg-gradient-tech bg-clip-text text-transparent">CleanBot</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up">
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto animate-slide-up">
             The revolutionary AI-powered robot that autonomously detects, collects, and disposes of litter to keep our world clean
           </p>
           

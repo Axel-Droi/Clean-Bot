@@ -1,0 +1,88 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Model training artifacts (Ultralytics / YOLO)
+runs/
+**/runs/
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.engine
+*.weights
+*.bin
+*.mlmodel
+
+# Datasets & archives
+dataset/
+datasets/
+AI-Model/dataset/
+AI-Model/runs/
+AI-Model/TACO/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Large media (optional)
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Notebooks
+*.ipynb
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# Caches / temp
+.cache/
+.tmp/
+tmp/
+_temp/
+
+# Coverage / test
+coverage/
+.coverage
+pytest_cache/
+.jest-cache/
+.jest-transform-cache/
+
+# Misc
+*.log.*
